@@ -8,7 +8,7 @@ Web component implementation of a trend-line.
 	<img width="100px" src="image.png">
 </div>
 
-Use it directly in the browser ([demo](https://codesandbox.io/s/hopeful-bird-pp41i?file=/index.html)).
+Use it directly in the browser ([demo](https://pp41i.csb.app/)).
 
 ## License
 
