@@ -1,5 +1,9 @@
 export const arrowTransform = {
 	get: ({data, xScale, yScale}) => {
+		if (data.length < 2) {
+			return 'translate(0, 0) rotate(0)';
+		}
+
 		const l = data.length;
 		const x2 = xScale(data[l - 1][0]);
 		const x1 = xScale(data[l - 2][0]);
