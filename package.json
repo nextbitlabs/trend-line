@@ -1,0 +1,38 @@
+{
+  "name": "trend-line",
+  "version": "1.0.0",
+  "description": "Web component implementation of a trend-line.",
+  "module": "dist/trend-line.esm.js",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "pretest": "npm run build",
+    "test": "xo src/*",
+    "lint-fix": "xo --fix src/*"
+  },
+  "keywords": [
+    "trend-line",
+    "arrow",
+    "SVG",
+    "line",
+    "chart",
+    "web-component",
+    "component"
+  ],
+  "author": {
+    "name": "Riccardo Scalco",
+    "email": "riccardoscalco@gmail.com",
+    "url": "http://riccardoscalco.github.io/"
+  },
+  "license": "MIT",
+  "repository": "nextbitlabs/trend-line",
+  "homepage": "https://github.com/nextbitlabs/trend-line/",
+  "bugs": "https://github.com/nextbitlabs/trend-line/issues",
+  "devDependencies": {
+    "rollup": "^2.53.2",
+    "xo": "^0.41.0"
+  },
+  "files": [
+    "dist"
+  ]
+}

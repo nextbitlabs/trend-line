@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="module">
+			import '../dist/trend-line.esm.js';
+		</script>
+	</head>
+	<style>
+		/*
+			CSS custom properties penetrate the Shadow DOM.
+			They are useful to provide custom styling.
+		*/
+		trend-line {
+			--color: #333; /* default black */
+			--stroke-width: 2px; /* default 2px */
+			--background: #eee; /* default transparent */
+		}
+	</style>
+	<body>
+		<trend-line width="100" height="100" margin="20"></trend-line>
+		<trend-line width="100" height="100" margin="20"></trend-line>
+		<button>Update</button>
+	</body>
+	<script>
+		const N = 10;
+		const elements = document.querySelectorAll('trend-line');
+		update(elements);
+
+		function update(elements) {
+			for (const el of elements) {
+				el.data = getRandomData(N);
+			}
+		}
+
+		const button = document.querySelector('button');
+		button.addEventListener('click', event => {
+			update(elements);
+		});
+
+		function getRandomData (length) {
+			return Array.from({length}, getRandomDatum);
+		}
+
+		function getRandomDatum (el, index) {
+			return [index, Math.random()];
+		}
+	</script>
+</html>
