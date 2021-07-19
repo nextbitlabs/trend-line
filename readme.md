@@ -4,11 +4,11 @@
 
 Web component implementation of a trend-line.
 
-<div align="center">
-	<img width="100px" src="image.png">
-</div>
+<img width="100px" src="image.png">
 
-Use it directly in the browser ([demo](https://pp41i.csb.app/)).
+## Usage
+
+Please have a look at the ([demo](https://pp41i.csb.app/)).
 
 ## License
 
