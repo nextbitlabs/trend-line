@@ -8,7 +8,7 @@ Web component implementation of a trend-line.
 
 ## Usage
 
-Please have a look at the ([demo](https://pp41i.csb.app/)).
+Please have a look at the [demo](https://pp41i.csb.app/).
 
 ## License
 
