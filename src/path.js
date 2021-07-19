@@ -2,20 +2,12 @@ import {scaleLinear} from 'https://cdn.skypack.dev/d3-scale@4';
 import {line, curveBasis} from 'https://cdn.skypack.dev/d3-shape@3';
 import {extent} from 'https://cdn.skypack.dev/d3-array@3';
 
-// export const maxValue = {
-// 	get: ({data}) => Math.max(...data.map(element => element[1])),
-// };
-
-// export const minValue = {
-// 	get: ({data}) => Math.min(...data.map(element => element[1])),
-// };
-
 export const xDomain = {
-	get: ({data}) => extent(data, el => el[0]),
+	get: ({data}) => extent(data, element => element[0]),
 };
 
 export const yDomain = {
-	get: ({data}) => extent(data, el => el[1]),
+	get: ({data}) => extent(data, element => element[1]),
 };
 
 export const xScale = {
