@@ -5,9 +5,10 @@
 Web component implementation of a trend-line.
 
 <div align="center">
-	<img width="200px" src="image.png">
+	<img width="100px" src="image.png">
 </div>
 
+Use it directly in the browser ([demo](https://codesandbox.io/s/hopeful-bird-pp41i?file=/index.html)).
 
 ## License
 
