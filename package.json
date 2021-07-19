@@ -8,7 +8,8 @@
     "dev": "rollup -c -w",
     "pretest": "npm run build",
     "test": "xo src/*",
-    "lint-fix": "xo --fix src/*"
+    "lint-fix": "xo --fix src/*",
+    "release": "np"
   },
   "keywords": [
     "trend-line",
@@ -29,10 +30,14 @@
   "homepage": "https://github.com/nextbitlabs/trend-line/",
   "bugs": "https://github.com/nextbitlabs/trend-line/issues",
   "devDependencies": {
+    "np": "^7.5.0",
     "rollup": "^2.53.2",
     "xo": "^0.41.0"
   },
   "files": [
     "dist"
-  ]
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }
