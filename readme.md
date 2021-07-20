@@ -10,7 +10,7 @@ Web component implementation of a trend-line.
 
 Import `trend-line` and set CSS custom properties:
 
-html```
+```html
 <head>
   <script type="module">
     import "https://cdn.skypack.dev/@nextbitlabs/trend-line";
@@ -31,7 +31,7 @@ html```
 
 Use the custom element:
 
-html```
+```html
 <body>
   <trend-line width="100" height="100" margin="20"></trend-line>
 </body>
@@ -39,7 +39,7 @@ html```
 
 Set the data to plot:
 
-html```
+```html
 <script>
   const element = document.querySelector("trend-line");
   element.data = [[1, 3], [2, 5], [3, 2]];
