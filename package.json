@@ -1,6 +1,6 @@
 {
   "name": "@nextbitlabs/trend-line",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Web component implementation of a trend-line.",
   "module": "dist/trend-line.esm.js",
   "exports": {
