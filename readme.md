@@ -35,7 +35,7 @@ Use the custom element:
 <body>
   <trend-line
     x-interval="[0, 10]"
-    y_interval="[0, 1]"
+    y-interval="[0, 1]"
     width="100"
     height="100"
     margin="20"
