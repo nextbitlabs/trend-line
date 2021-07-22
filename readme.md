@@ -33,7 +33,13 @@ Use the custom element:
 
 ```html
 <body>
-  <trend-line width="100" height="100" margin="20"></trend-line>
+  <trend-line
+    x-interval="[0, 10]"
+    y_interval="[0, 1]"
+    width="100"
+    height="100"
+    margin="20"
+  ></trend-line>
 </body>
 ```
 
@@ -46,7 +52,7 @@ Set the data to plot:
 </script>
 ```
 
-Please have a look at the [demo](https://pp41i.csb.app/).
+Please have a look at the [demo](https://github.com/nextbitlabs/trend-line/blob/main/demo/index.html) in the repo, or the live [demo](https://pp41i.csb.app/).
 
 ## License
 

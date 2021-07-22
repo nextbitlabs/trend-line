@@ -17,26 +17,41 @@
 		}
 	</style>
 	<body>
-		<trend-line width="100" height="100" margin="20"></trend-line>
-		<trend-line width="100" height="100" margin="20"></trend-line>
+
+		<trend-line
+			data="[[0, 1], [1, 2], [2, 4], [3, 8]]"
+			x-interval="[0, 3]"
+			y-interval="[1, 8]"
+			width="100"
+			height="100"
+			margin="20"
+		></trend-line>
+
+		<trend-line
+			id="js"
+			width="100"
+			height="100"
+			margin="20"
+		></trend-line>
+
 		<button>Update</button>
 	</body>
 	<script>
 		const N = 10;
-		const elements = document.querySelectorAll('trend-line');
-		update(elements);
+		const element = document.querySelector("#js");
+		update(element);
 
-		function update(elements) {
-			for (const el of elements) {
-				el.data = getRandomData(N);
-				el.xInterval = [0, 10];
-				el.yInterval = [0, 1];
-			}
+		function update(element) {
+			element.data = getRandomData(N);
+			/*
+			element.xInterval and element.yInterval default to
+			the ranges observed in data.
+			*/
 		}
 
 		const button = document.querySelector('button');
 		button.addEventListener('click', event => {
-			update(elements);
+			update(element);
 		});
 
 		function getRandomData (length) {
