@@ -3,11 +3,17 @@ import {line, curveBasis} from 'https://cdn.skypack.dev/d3-shape@3';
 import {extent} from 'https://cdn.skypack.dev/d3-array@3';
 
 export const xDomain = {
-	get: ({data}) => extent(data, element => element[0]),
+	get: ({data, xInterval}) =>
+		xInterval.length === 2
+			? xInterval
+			: extent(data, element => element[0]),
 };
 
 export const yDomain = {
-	get: ({data}) => extent(data, element => element[1]),
+	get: ({data, yInterval}) =>
+		yInterval.length === 2
+			? yInterval
+			: extent(data, element => element[1]),
 };
 
 export const xScale = {

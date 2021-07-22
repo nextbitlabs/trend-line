@@ -29,6 +29,8 @@
 		function update(elements) {
 			for (const el of elements) {
 				el.data = getRandomData(N);
+				el.xInterval = [0, 10];
+				el.yInterval = [0, 1];
 			}
 		}
 
