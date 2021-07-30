@@ -1,4 +1,4 @@
-import {html} from 'https://cdn.skypack.dev/hybrids@6';
+import {html} from 'https://cdn.skypack.dev/pin/hybrids@v6.0.0-4EAwbWl4Xd4pUMUqehOL/mode=imports,min/optimized/hybrids.js';
 import style from './style.js';
 
 export function render({

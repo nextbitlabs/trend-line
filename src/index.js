@@ -1,4 +1,4 @@
-import {define, property} from 'https://cdn.skypack.dev/hybrids@6';
+import {define, property} from 'https://cdn.skypack.dev/pin/hybrids@v6.0.0-4EAwbWl4Xd4pUMUqehOL/mode=imports,min/optimized/hybrids.js';
 import {render} from './render.js';
 import * as layout from './layout.js';
 import * as path from './path.js';

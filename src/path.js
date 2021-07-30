@@ -1,6 +1,6 @@
-import {scaleLinear} from 'https://cdn.skypack.dev/d3-scale@4';
-import {line, curveBasis} from 'https://cdn.skypack.dev/d3-shape@3';
-import {extent} from 'https://cdn.skypack.dev/d3-array@3';
+import {scaleLinear} from 'https://cdn.skypack.dev/pin/d3-scale@v4.0.0-wZtVxcXJGOuNydE7pnqz/mode=imports,min/optimized/d3-scale.js';
+import {line, curveBasis} from 'https://cdn.skypack.dev/pin/d3-shape@v3.0.1-fms1GpCrjZzpeCX47WIF/mode=imports,min/optimized/d3-shape.js';
+import {extent} from 'https://cdn.skypack.dev/pin/d3-array@v3.0.1-m5FhU7CD6AEqTwkMJT6E/mode=imports,min/optimized/d3-array.js';
 
 export const xDomain = {
 	get: ({data, xInterval}) =>
